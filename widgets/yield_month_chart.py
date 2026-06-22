@@ -250,7 +250,7 @@ class YieldMonthChart(FigureCanvasQTAgg):
 
         h2, l2 = ax_yield.get_legend_handles_labels()
 
-        h3, l3 = ax_in.get_legend_handles_labels()
+        # h3, l3 = ax_in.get_legend_handles_labels()
         ##xet chieu cao theo du lieu
         max_ppm = max(bottom) if len(bottom) else 0
 
@@ -269,8 +269,8 @@ class YieldMonthChart(FigureCanvasQTAgg):
         )
 
         ax_ppm.legend(
-            h3 + h1 + h2,
-            l3 + l1 + l2,
+             h1 + h2,
+             l1 + l2,
             loc="upper center",
             bbox_to_anchor=(0.5, 1.15),
             ncol=8,
